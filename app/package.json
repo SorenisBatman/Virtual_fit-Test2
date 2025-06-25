@@ -1,7 +1,6 @@
 {
   "name": "virtual-fit-trove",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,6 +15,8 @@
   },
   "devDependencies": {
     "vite": "^5.0.0",
-    "@vitejs/plugin-react-swc": "^3.3.2"
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14"
   }
 }

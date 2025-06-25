@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 26 26 30;
+    --foreground: 229 229 231;
+    --card: 35 35 40;
+    --card-foreground: 229 229 231;
+    --popover: 35 35 40;
+    --popover-foreground: 229 229 231;
+    --muted: 45 45 50;
+    --muted-foreground: 90 107 125;
+    --accent: 196 139 92;
+    --accent-foreground: 255 255 255;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    --border: 55 55 60;
+    --input: 55 55 60;
+    --ring: 58 30 92;
+    --radius: 0.75rem;
+  }
+
+  body {
+    @apply bg-neutral text-text font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-script;
+  }
+}
+
+.elegant-gradient {
+  background: linear-gradient(135deg, #3A1E5C 0%, #5A6B7D 50%, #C48B5C 100%);
+}
+
+.card-elegant {
+  @apply bg-card/90 backdrop-blur-sm border border-white/10 shadow-xl rounded-2xl;
+}
+
+.hover-lift {
+  @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl;
+}

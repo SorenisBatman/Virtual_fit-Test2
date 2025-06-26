@@ -1,29 +1,56 @@
-{
-  "name": "virtual-fit-trove",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.0",
-    "three": "^0.159.0",
-    "three-mesh-bvh": "^0.8.3",
-    "@react-three/fiber": "^8.13.5",
-    "@react-three/drei": "^9.102.3",
-    "lucide-react": "^0.342.0",
-    "next-themes": "^0.2.1",
-    "sonner": "^1.0.0"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react-swc": "^3.4.0",
-    "tailwindcss": "^3.4.1",
-    "postcss": "^8.4.38",
-    "autoprefixer": "^10.4.17",
-    "tailwindcss-animate": "^1.0.7"
-  }
-}
+[09:34:59.833] Running build in Washington, D.C., USA (East) – iad1
+[09:34:59.834] Build machine configuration: 2 cores, 8 GB
+[09:34:59.848] Cloning github.com/SorenisBatman/Virtual_fit-Test2 (Branch: main, Commit: d3b6647)
+[09:35:00.413] Previous build caches not available
+[09:35:00.512] Cloning completed: 664.000ms
+[09:35:00.768] Running "vercel build"
+[09:35:01.194] Vercel CLI 43.3.0
+[09:35:01.747] Running "install" command: `npm install`...
+[09:35:29.684] npm warn deprecated three-mesh-bvh@0.7.8: Deprecated due to three.js version incompatibility. Please use v0.8.0, instead.
+[09:35:36.891] 
+[09:35:36.891] added 236 packages, and audited 237 packages in 35s
+[09:35:36.892] 
+[09:35:36.892] 44 packages are looking for funding
+[09:35:36.892]   run `npm fund` for details
+[09:35:36.897] 
+[09:35:36.898] 2 moderate severity vulnerabilities
+[09:35:36.898] 
+[09:35:36.898] To address all issues (including breaking changes), run:
+[09:35:36.898]   npm audit fix --force
+[09:35:36.899] 
+[09:35:36.899] Run `npm audit` for details.
+[09:35:37.263] [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[09:35:37.307] [36mvite v5.4.19 [32mbuilding for production...[36m[39m
+[09:35:37.358] transforming...
+[09:35:37.594] (node:127) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///vercel/path0/app/postcss.config.js is not specified and it doesn't parse as CommonJS.
+[09:35:37.596] Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+[09:35:37.596] To eliminate this warning, add "type": "module" to /vercel/path0/app/package.json.
+[09:35:37.596] (Use `node --trace-warnings ...` to show where the warning was created)
+[09:35:38.642] node_modules/next-themes/dist/index.module.js (1:1576): A comment
+[09:35:38.642] 
+[09:35:38.643] "/*#__PURE__*/"
+[09:35:38.643] 
+[09:35:38.643] in "node_modules/next-themes/dist/index.module.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[09:35:38.643] node_modules/next-themes/dist/index.module.js (1:2992): A comment
+[09:35:38.644] 
+[09:35:38.644] "/*#__PURE__*/"
+[09:35:38.644] 
+[09:35:38.644] in "node_modules/next-themes/dist/index.module.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[09:35:38.815] [32m✓[39m 28 modules transformed.
+[09:35:38.821] [31mx[39m Build failed in 1.49s
+[09:35:38.821] [31merror during build:
+[09:35:38.821] [31m[vite]: Rollup failed to resolve import "@radix-ui/react-label" from "/vercel/path0/app/src/components/ui/label.tsx".
+[09:35:38.821] This is most likely unintended because it can break your application at runtime.
+[09:35:38.821] If you do want to externalize this module explicitly add it to
+[09:35:38.821] `build.rollupOptions.external`[31m
+[09:35:38.821]     at viteWarn (file:///vercel/path0/app/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:65839:17)
+[09:35:38.821]     at onwarn (/vercel/path0/app/node_modules/@vitejs/plugin-react-swc/index.cjs:130:9)
+[09:35:38.822]     at onRollupWarning (file:///vercel/path0/app/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:65869:5)
+[09:35:38.822]     at onwarn (file:///vercel/path0/app/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:65534:7)
+[09:35:38.822]     at file:///vercel/path0/app/node_modules/rollup/dist/es/shared/node-entry.js:20817:13
+[09:35:38.822]     at Object.logger [as onLog] (file:///vercel/path0/app/node_modules/rollup/dist/es/shared/node-entry.js:22683:9)
+[09:35:38.822]     at ModuleLoader.handleInvalidResolvedId (file:///vercel/path0/app/node_modules/rollup/dist/es/shared/node-entry.js:21429:26)
+[09:35:38.822]     at file:///vercel/path0/app/node_modules/rollup/dist/es/shared/node-entry.js:21387:26[39m
+[09:35:38.865] Error: Command "vite build" exited with 1
+[09:35:39.061] 
+[09:35:42.172] Exiting build container
